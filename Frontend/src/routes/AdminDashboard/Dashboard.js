@@ -116,11 +116,11 @@ function Dashboard() {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */}
     {/* <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> */}
 
-    <div class="container">
+    <div class="containerdashboard">
         <nav class="sidebar">            
             <div>
                 <div class="sidebar__logo">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_129_9347)">
                         <path d="M19.5386 23.4366C19.3904 23.5849 19.2144 23.7025 19.0208 23.7828C18.8271 23.863 18.6195 23.9043 18.4099 23.9043C18.2003 23.9043 17.9927 23.863 17.799 23.7828C17.6053 23.7025 17.4294 23.5849 17.2812 23.4366L8.09921 14.2561C6.77491 12.9048 6.03741 11.0854 6.04697 9.19342C6.05652 7.30139 6.81236 5.48959 8.15024 4.15171C9.48812 2.81383 11.2999 2.05799 13.192 2.04843C15.084 2.03888 16.9033 2.77638 18.2547 4.10067L24.0578 9.90378C24.3563 10.2039 24.5235 10.6103 24.5224 11.0337C24.5213 11.457 24.3521 11.8626 24.052 12.1612C23.7518 12.4598 23.3454 12.6269 22.9221 12.6258C22.4987 12.6247 22.0931 12.4555 21.7945 12.1554L15.9987 6.35228C15.2499 5.60352 14.2344 5.18287 13.1755 5.18287C12.1166 5.18287 11.101 5.60352 10.3523 6.35228C9.6035 7.10104 9.18285 8.11658 9.18285 9.17549C9.18285 10.2344 9.6035 11.2499 10.3523 11.9987L19.5342 21.1807C19.8338 21.4793 20.0026 21.8847 20.0034 22.3078C20.0042 22.7308 19.837 23.1368 19.5386 23.4366Z" fill="#7C5CFC"/>
                         <path d="M24.0012 27.8992C22.6533 29.2436 20.8272 29.9987 18.9234 29.9987C17.0197 29.9987 15.1936 29.2436 13.8457 27.8992L8.04986 22.0961C7.88902 21.951 7.75941 21.7747 7.66891 21.5779C7.57841 21.3811 7.52892 21.1679 7.52346 20.9514C7.51799 20.7348 7.55667 20.5194 7.63713 20.3183C7.71758 20.1172 7.83814 19.9346 7.99145 19.7816C8.14477 19.6286 8.32762 19.5084 8.52889 19.4283C8.73015 19.3482 8.94561 19.31 9.16214 19.3158C9.37867 19.3217 9.59173 19.3716 9.78835 19.4625C9.98497 19.5534 10.161 19.6833 10.3058 19.8445L16.1017 25.6476C16.8516 26.3875 17.8637 26.8008 18.9172 26.7972C19.9707 26.7937 20.98 26.3737 21.7249 25.6287C22.4698 24.8838 22.8899 23.8745 22.8934 22.821C22.8969 21.7675 22.4837 20.7554 21.7437 20.0055L12.5618 10.8192C12.2624 10.5198 12.0942 10.1138 12.0942 9.69047C12.0942 9.26712 12.2624 8.86111 12.5618 8.56176C12.8611 8.26241 13.2671 8.09424 13.6905 8.09424C14.1138 8.09424 14.5198 8.26241 14.8192 8.56176L24.0012 17.7437C25.346 19.0914 26.1013 20.9176 26.1013 22.8215C26.1013 24.7253 25.346 26.5515 24.0012 27.8992Z" fill="#7C5CFC"/>
@@ -130,8 +130,8 @@ function Dashboard() {
                         <rect width="20.1005" height="28" fill="currentColor" transform="translate(6 2)"/>
                         </clipPath>
                         </defs>
-                    </svg>
-                    <h2 class="sidebar__logo-header">Spend.In</h2>    
+                    </svg> */}
+                    <h2 class="sidebar__logo-header">Admin System</h2>    
                 </div>
                 <ul class="side-nav">
                     <span class="side-nav__header">Main Menu</span>
@@ -141,6 +141,7 @@ function Dashboard() {
                         </svg>                       
                         <span>Dashboard</span>
                     </li>
+                    {/* Insurane Campanies */}
                     <li class="side-nav__item">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.30664 17.1375V15.24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -150,8 +151,9 @@ function Dashboard() {
                             <path d="M13.0073 5.86255H15.6932V8.53922" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M8.25016 20.6667H13.7502C18.3335 20.6667 20.1668 18.8334 20.1668 14.25V8.75004C20.1668 4.16671 18.3335 2.33337 13.7502 2.33337H8.25016C3.66683 2.33337 1.8335 4.16671 1.8335 8.75004V14.25C1.8335 18.8334 3.66683 20.6667 8.25016 20.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                       
-                        <span>Insight</span>
+                        <span>Insurane Campanies</span>
                     </li>
+                    {/* Sales Shops */}
                     <li class="side-nav__item">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.1668 9.66671V14.25C20.1668 18.8334 18.3335 20.6667 13.7502 20.6667H8.25016C3.66683 20.6667 1.8335 18.8334 1.8335 14.25V8.75004C1.8335 4.16671 3.66683 2.33337 8.25016 2.33337H12.8335" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -159,8 +161,9 @@ function Dashboard() {
                             <path d="M6.4165 12.4166H11.9165" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M6.4165 16.0834H10.0832" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                        
-                        <span>Invoices</span>
+                        <span>Sales Shops</span>
                     </li>
+                    {/* the repair shops */}
                     <li class="side-nav__item">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.90576 7.32001L10.9999 12.0042L19.0391 7.34748" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -168,8 +171,9 @@ function Dashboard() {
                             <path d="M9.10256 2.77331L4.20757 5.49584C3.0984 6.11001 2.19092 7.64999 2.19092 8.91499V14.0942C2.19092 15.3592 3.0984 16.8992 4.20757 17.5133L9.10256 20.2359C10.1476 20.8134 11.8617 20.8134 12.9067 20.2359L17.8017 17.5133C18.9109 16.8992 19.8184 15.3592 19.8184 14.0942V8.91499C19.8184 7.64999 18.9109 6.11001 17.8017 5.49584L12.9067 2.77331C11.8526 2.18665 10.1476 2.18665 9.10256 2.77331Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M15.5834 12.6366V9.28167L6.88428 4.2583" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                        
-                        <span>Products</span>
+                        <span>Repair Shops</span>
                     </li>
+                    {/* insurance policies */}
                     <li class="side-nav__item">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.2915 12.6367V11.0509C2.2915 9.15336 3.84067 7.60419 5.73817 7.60419H16.2615C18.159 7.60419 19.7082 9.15336 19.7082 11.0509V12.3709H17.8565C17.3432 12.3709 16.8757 12.5725 16.5365 12.9208C16.1515 13.2967 15.9315 13.8375 15.9865 14.415C16.069 15.405 16.9765 16.1292 17.9665 16.1292H19.7082V17.22C19.7082 19.1175 18.159 20.6667 16.2615 20.6667H11.2382" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -181,17 +185,9 @@ function Dashboard() {
                             <path d="M8.70833 20.4651H3.81334C3.22667 20.4651 2.75 19.9884 2.75 19.4017V18.2284" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7.59131 21.5837L8.70964 20.4653L7.59131 19.347" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                        
-                        <span>Reimburce</span>
+                        <span>Insurane Policies</span>
                     </li>
-                    <li class="side-nav__item">
-                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.79183 17.9166H7.3335C3.66683 17.9166 1.8335 17 1.8335 12.4166V7.83331C1.8335 4.16665 3.66683 2.33331 7.3335 2.33331H14.6668C18.3335 2.33331 20.1668 4.16665 20.1668 7.83331V12.4166C20.1668 16.0833 18.3335 17.9166 14.6668 17.9166H14.2085C13.9243 17.9166 13.6493 18.0541 13.4752 18.2833L12.1002 20.1166C11.4952 20.9233 10.5052 20.9233 9.90016 20.1166L8.52516 18.2833C8.3785 18.0816 8.03933 17.9166 7.79183 17.9166Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14.6633 10.5833H14.6715" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.9958 10.5833H11.004" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7.3283 10.5833H7.33653" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
-                        <span>Inbox</span>
-                    </li>
+                    {/* Manage Users */}
                     <li class="side-nav__item">
                         <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.79183 17.9166H7.3335C3.66683 17.9166 1.8335 17 1.8335 12.4166V7.83331C1.8335 4.16665 3.66683 2.33331 7.3335 2.33331H14.6668C18.3335 2.33331 20.1668 4.16665 20.1668 7.83331V12.4166C20.1668 16.0833 18.3335 17.9166 14.6668 17.9166H14.2085C13.9243 17.9166 13.6493 18.0541 13.4752 18.2833L12.1002 20.1166C11.4952 20.9233 10.5052 20.9233 9.90016 20.1166L8.52516 18.2833C8.3785 18.0816 8.03933 17.9166 7.79183 17.9166Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -199,9 +195,10 @@ function Dashboard() {
                             <path d="M10.9958 10.5833H11.004" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7.3283 10.5833H7.33653" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>  
-                        <span>People &amp; Teams</span>
-                    </li>
+                        <span>Manage Users</span>
+                    </li> 
                 </ul>
+                <br />
     
                 <ul class="side-nav">
                     <span class="side-nav__header">Preferences</span>

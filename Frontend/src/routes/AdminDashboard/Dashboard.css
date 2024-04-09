@@ -14,7 +14,7 @@ body {
 }
 
 /* -------------- CONTAINER -------------- */
-.container {
+.containerdashboard {
     display: flex;
     height: 100%;
 }
@@ -86,7 +86,7 @@ body {
 }
 
 .side-nav__item:hover,  .side-nav__item-active {
-    background-color: #7C5CFC;
+    background-color: #4481eb;
     color: white;
 }
 
@@ -355,14 +355,14 @@ tr > td:first-child {
 }
 
 .btn-purple {
-    background-color: #7C5CFC;
+    background-color: #4481eb;
     color: white;
 }
 
 .btn-white {
     background-color: white;
     color: black;
-    border: 2px solid #7C5CFC;
+    border: 2px solid #4481eb;
 }
 
 /* -------------- PIE CHART -------------- */
@@ -445,7 +445,7 @@ tr > td:first-child {
 }
 
 .fourth {
-    background: #7C5CFC;
+    background: #4481eb;
 }
 
 .fifth {

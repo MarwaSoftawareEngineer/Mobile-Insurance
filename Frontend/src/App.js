@@ -5,11 +5,9 @@ import "./index.css";
 import Home from "./routes/Home";
 // import Register from "./routes/Register";
 import Login from "./routes/Login";
-// import Dashboard from "./routes/Dashboard";
-// if we want to add a component
-// import SideBar from './components/SideBar'
-// import aos
-// import aos css
+import Dashboard from "./routes/AdminDashboard/Dashboard";
+import Campanies from "./routes/AdminDashboard/Campanies";
+
 
 
 //importing our route
@@ -28,7 +26,8 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/register" element={<Register />} /> */}
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/campanies" element={<Campanies />} />
 
       </Routes>
     </>
