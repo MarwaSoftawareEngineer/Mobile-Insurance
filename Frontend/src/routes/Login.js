@@ -1,135 +1,164 @@
-import React, { useEffect } from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGoogle, faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 // import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import login1 from '../assets/login1.png';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Login.css";
 
 function Login() {
-    useEffect(() => {
-      const sign_in_btn = document.querySelector("#sign-in-btn");
-      const sign_up_btn = document.querySelector("#sign-up-btn");
-      const container = document.querySelector(".container");
-      
-      sign_up_btn.addEventListener("click", () => {
-        container.classList.add("sign-up-mode");
-      });
-      
-      sign_in_btn.addEventListener("click", () => {
-        container.classList.remove("sign-up-mode");
-      });
-    }, []);
+  const [usernameSignIn, setUsernameSignIn] = useState("");
+  const [passwordSignIn, setPasswordSignIn] = useState("");
+  const [usernameSignUp, setUsernameSignUp] = useState("");
+  const [emailSignUp, setEmailSignUp] = useState("");
+  const [passwordSignUp, setPasswordSignUp] = useState("");
 
-    return (
-      <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+  useEffect(() => {
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const container = document.querySelector(".container");
+
+    sign_up_btn.addEventListener("click", () => {
+      container.classList.add("sign-up-mode");
+    });
+
+    sign_in_btn.addEventListener("click", () => {
+      container.classList.remove("sign-up-mode");
+    });
+  }, []);
+
+  const handleSignIn = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3000/login", {
+        username: usernameSignIn,
+        password: passwordSignIn,
+      });
+      console.log("Sign-in response:", response.data);
+      // Reset input fields
+      setUsernameSignIn("");
+      setPasswordSignIn("");
+    } catch (error) {
+      console.error("Sign-in error:", error);
+    }
+  };
+
+  const handleSignUp = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:3000/login", {
+        username: usernameSignUp,
+        email: emailSignUp,
+        password: passwordSignUp,
+      });
+      console.log("Sign-up response:", response.data);
+      // Reset input fields
+      setUsernameSignUp("");
+      setEmailSignUp("");
+      setPasswordSignUp("");
+    } catch (error) {
+      console.error("Sign-up error:", error);
+    }
+  };
+
+  return (
+    <div className="container">
+      <div className="forms-container">
+        <div className="signin-signup">
+          <form onSubmit={handleSignIn} className="sign-in-form">
+            <h3 className="title">Mobile<span className="dot primary">Insurance</span></h3>
+            <h2 className="title">Sign in</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                value={usernameSignIn}
+                onChange={(e) => setUsernameSignIn(e.target.value)}
+              />
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                value={passwordSignIn}
+                onChange={(e) => setPasswordSignIn(e.target.value)}
+              />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+            <input type="submit" value="Login" className="btn solid" />
           </form>
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+          <form onSubmit={handleSignUp} className="sign-up-form">
+            <h3 className="title">Mobile<span className="dot primary">Insurance</span></h3>
+            <h2 className="title" id="bouton">Sign up</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="Username"
+                value={usernameSignUp}
+                onChange={(e) => setUsernameSignUp(e.target.value)}
+              />
             </div>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Role" />
+            <div className="input-field">
+              <i className="fas fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="Email"
+                value={emailSignUp}
+                onChange={(e) => setEmailSignUp(e.target.value)}
+              />
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                value={passwordSignUp}
+                onChange={(e) => setPasswordSignUp(e.target.value)}
+              />
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+            <input type="submit" className="btn" value="Sign up" />
           </form>
         </div>
       </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
+      <div className="panels-container">
+        <div className="panel left-panel">
+          <div className="content">
             <h3>New here ?</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
-              Sign up
-            </button>
+            <p>Welcome! please SignUp to continue.</p>
+            <center>
+              <button className="btn transparent" id="sign-up-btn">Sign up</button>
+            </center>
           </div>
-          <img src={login1} 
-          class="image"
-          alt="image for login page"
-          height={600} 
-          width={500}
+          <img
+            src={login1}
+            className="image"
+            alt="image for login page"
+            height={600}
+            width={500}
           />
         </div>
-        <div class="panel right-panel">
-          <div class="content">
+        <div className="panel right-panel">
+          <div className="content">
             <h3>One of us ?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
-            </p>
-            <button class="btn transparent" id="sign-in-btn">
-              Sign in
-            </button>
+            <p>So, Enter Your Credentials To Access Your Account.</p>
+            <center>
+              <button className="btn transparent" id="sign-in-btn">Sign in</button>
+            </center>
           </div>
-          <img src={login1} 
-          class="image"
-          alt="image for login page"
-          height={600} 
-          width={500}
+          <img
+            src={login1}
+            className="image"
+            alt="image for login page"
+            height={600}
+            width={500}
           />
         </div>
       </div>
     </div>
-
-    );
+  );
 }
 
 export default Login;

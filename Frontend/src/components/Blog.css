@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.containerblog {
+  margin: auto;
+  max-width: 1200px;
+  height: 900px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.img {
+  background-image: url(https://www.shutterstock.com/shutterstock/photos/2186445825/display_1500/stock-vector-approved-credit-bill-good-credit-score-receiving-loan-approval-from-bank-personal-finance-vector-2186445825.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0 100px;
+  background-attachment: fixed;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+a {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  margin-bottom: 70px;
+}
+.title1 {
+  /* margin-right: 300px; */
+    color: #18172d;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  /* margin-left: 100px; */
+  margin-top: -30px; /* Vous pouvez ajuster cette valeur selon vos besoins */
+}
+
+.title2 {
+  /* margin-right: 200px; */
+ margin-top: -30px;
+
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+.introduce {
+  /* margin-right: 200px; */
+  color: black;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.jotform-icon {
+  background-image: url("https://cdn-icons-png.freepik.com/256/12440/12440367.png?uid=R141512063&ga=GA1.1.998579806.1707073294&semt=ais_hybrid");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 70px;
+  /* border-radius:50%; */
+  margin-bottom: 70px;
+}
+.button {
+  padding: 12px 17px;
+  border-radius: 5px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  font-size: 100%;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+.title3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 90px;
+}
+.icon1-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+
+.icon-description {
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #000000b3;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.three-icon {
+  flex: 1;
+  padding: 30px;
+}
+.icon-title {
+  font-family: "Poppins", sans-serif;
+}
+.page2 {
+  text-align: center;
+}
+.page3 {
+  background-color: #a8a4a452;
+}
+.page3-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+}
+.page3-img {
+  max-width: 540px;
+  width: 100%;
+}
+.information {
+  flex: 1;
+  padding-left: 70px;
+}
+button.learn-more {
+  background-color: #292b2c;
+  color: white;
+}
+.info-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.info-all {
+  color: #000000b3;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 17px;
+}
+.get-free {
+  background-color: #292b2c;
+  color: white;
+}
+.memberships {
+  display: flex;
+  flex-wrap: wrap;
+}
+.member {
+  flex: auto;
+  padding: 60px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+}
+span {
+  font-size: 40px;
+}
+.mem-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+.orange {
+  background-color: #ff8001;
+  color: white;
+}
+.page4 {
+  padding: 80px 0;
+}
+.under {
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+}
+.under .containerblog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 840px) {
+  .information {
+    padding-left: 0;
+    text-align: center;
+  }
+  .page3-box {
+    justify-content: center;
+  }
+}

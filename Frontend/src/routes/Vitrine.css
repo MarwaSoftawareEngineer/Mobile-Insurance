@@ -1,0 +1,146 @@
+body {
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+	text-align: justify;
+	background-color: white;
+	padding: 1em;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+
+button {
+	padding: 1em;
+	border: none;
+	cursor: pointer;
+	border-radius: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+section {
+	padding: 4em;
+    margin-bottom: 300px;
+}
+
+h2 {
+	font-size: 55px;
+	font-weight: 900;
+	margin-bottom: 60px;
+    margin-top: 150px;
+}
+
+.zp {
+    margin-top: 60px;
+	margin-right: 1em;
+}
+
+.cut {
+	margin-bottom: 2em;
+}
+
+
+.primary {
+	color: #5243c0;
+}
+
+.pink {
+	color: #FED7DA;
+}
+
+.bg-color-pink {
+	border-color: #FED7DA;
+	background-color: #FED7DA;
+}
+
+.bg-color-red {
+	border-color: #FD6534;
+	background-color: #FD6534;
+}
+
+.bg-color-green {
+	border-color: #9ED095;
+	background-color: #9ED095;
+}
+
+.bg-color-yellow {
+	border-color: #FFE4A0;
+	background-color: #FFE4A0;
+}
+
+
+#header {
+	justify-content: space-between;
+	font-size: 14px;
+	font-weight: bold;
+}
+.nav-item {
+	cursor: pointer;
+	margin: 30px 0; /* Changed margin to reduce vertical space */
+	width: 80px;
+}  
+.nav-item:hover {
+	text-decoration: underline #5243c0 solid 3px;
+}
+
+#your_account_btn {
+	background-color: #FFD8DB;
+}
+
+#main_content {
+	width: 32vw;
+	margin-right: 5em;
+}
+
+.card {
+	font-size: 14px;
+	padding: 6px;
+	border-radius: 15px;
+	margin-bottom: 12px;
+	justify-content: space-between;
+	background-color: #f9f9f9;
+}
+
+.card:hover {
+	cursor: pointer;
+	background-color: white;
+	box-shadow: 6px 6px 12px 2px rgba(230, 230, 230, 1);
+}
+
+.card-text {
+	white-space: nowrap;
+	font-weight: bold;
+	width: 40%;
+}
+
+.card-date {
+	color: #c3c3c3;
+}
+
+.card-checkbox, .card-user-image {
+	height: 40px;
+	width: 40px;
+}
+
+.strip {
+	height: 10px;
+	width: 2em;
+	border-radius: 100px;
+	margin-top: 1em;
+}
+
+.dot {
+	font-size: 24px;
+}
+
+#new_account_btn {
+	background-color: #5243C0;
+	color: white;
+}

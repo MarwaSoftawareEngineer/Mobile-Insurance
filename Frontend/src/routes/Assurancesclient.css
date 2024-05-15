@@ -1,0 +1,208 @@
+/* Button */
+.btnassurance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  position: relative;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  transition: transform 0.2s, background 0.2s;
+  margin-left: 1220px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnassurance::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+}
+
+.btnassurance:active {
+  transform: scale(0.95);
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transition: transform 0.2s, background 0.2s;
+}
+
+/* Modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.terms-label {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.checkbox-svg {
+  width: 24px;
+  height: 24px;
+  transition: stroke 0.2s;
+}
+
+.checkbox-box {
+  stroke: #000;
+}
+
+.checkbox-tick {
+  stroke: #2575fc;
+  transition: stroke 0.2s;
+}
+
+.checkbox-wrapper input:checked + .terms-label .checkbox-svg .checkbox-tick {
+  stroke: #6a11cb;
+}
+
+
+.reward-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #101218;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.IconContainer svg {
+  width: 40%;
+  z-index: 3;
+}
+.box-top {
+  transition: all 0.3s;
+}
+.text {
+  width: 70px;
+  height: 100%;
+  font-size: 13px;
+  color: #6a8ef6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.reward-btn:hover .IconContainer .box-top {
+  transform: translateY(-5px);
+}
+.reward-btn:hover {
+  background-color: #202531;
+}
+.reward-btn:hover .coin {
+  transform: translateY(-5px);
+  transition-delay: 0.2s;
+}
+.coin {
+  width: 25%;
+  height: 25%;
+  background-color: #e4d61a;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 2px solid #ffe956;
+  margin-top: 4px;
+}
